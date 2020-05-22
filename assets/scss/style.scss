@@ -3,21 +3,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}  
+}
+
+$margin-left : (10%);
+$ny-pic : 200px;
 
 // set body
 
     body
     {
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-left:    (100/4)*1%;
+        margin-right:   (100/4)*1%;
+        margin-top:     (100/10)*1%;
+        margin-bottom:  (100/10)*1%;
     
         background-image: url(https://iphonesoft.fr/images/_082019/fond-ecran-dynamique-macos-wallpaper-club.jpg);
-        @include background();
-    
-    
+        @include background(); 
     }
  
 //add grid
@@ -25,10 +26,11 @@
     .vcard
     {
         border: 10px solid gray;
-        padding: 2%;
+        padding: (100/50)*1%;
         display: grid;
         grid-template-columns: 60% 40%;
         grid-template-rows: 200px 1fr 50px;
+
         background-image: url(https://img.freepik.com/vecteurs-libre/gros-plan-marbre-blanc-fond-texture_53876-58927.jpg?size=626&ext=jpg);
         @include background();
     }
@@ -37,8 +39,8 @@
 
     .bryan-rasamizafy
     {
-        width: 200px;
-        height: 200px;
+        width: $ny-pic;
+        height: $ny-pic;
         border: 5px solid gray;  
     }
 
@@ -57,32 +59,30 @@
         grid-column: 1;
         grid-row: 1;
     }
+
+    .name
+    {
+        grid-column: 1;
+        grid-row: 2 ; 
+        margin-top: $margin-left;      
+        h1 {font-size: 50px;}
+    }
     
     .aboutme
     {
         grid-column: 2;
         grid-row: 1;
-        margin-left: 10%;
-        margin-right: 0px;  
+        margin-left: $margin-left;
+        margin-right: 0px; 
+        p{
+            font-size: 20px;
+            margin-top: 20px;
+         } 
     }
-    
-    p
-    {
-        font-size: 20px;
-        margin-top: 20px;
-    }
-       
+     
     h2
     {
         font-size: 25px;
-    }
-    
-    .name
-    {
-        grid-column: 1;
-        grid-row: 2 ; 
-        margin-top: 5%;      
-        h1 {font-size: 50px;}
     }
     
     .coordonnées
@@ -90,7 +90,7 @@
         grid-column: 2;
         grid-row: 2; 
         line-height: 40px;
-        margin-left: 10%;
+        margin-left: (100/10)*1%;
         img {margin-right: 20px;}   
     }
 
@@ -98,8 +98,20 @@
     {
         grid-column: 1 / span 2;
         grid-row: 3;
-        text-align: center;
-        margin-top: 10px;
-        li {display: inline-block;
-            margin-left: 5%;}   
+        margin-top: auto;
+        ul {
+            text-align: center;
+            li {display: inline-block;
+                margin-left: 5%;
+                    a{
+                    & :hover{ 
+                        width: 40px;
+                        height: 40px;
+                            }
+                    } 
+                }
+            }
+   
     }
+
+
