@@ -1,7 +1,71 @@
-header h1 {
-  color: red;
-  font-size: large;
-  font-weight: 100; }
+@charset "UTF-8";
+body {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-image: url(https://iphonesoft.fr/images/_082019/fond-ecran-dynamique-macos-wallpaper-club.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
-html {
-  font-size: 0.75px; }
+.vcard {
+  border: 10px solid gray;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 200px 1fr 50px;
+  background-image: url(https://img.freepik.com/vecteurs-libre/gros-plan-marbre-blanc-fond-texture_53876-58927.jpg?size=626&ext=jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.bryan-rasamizafy {
+  width: 200px;
+  height: 200px;
+  border: 5px solid gray; }
+
+img {
+  width: 20px;
+  height: 20px; }
+
+.photo {
+  grid-column: 1;
+  grid-row: 1; }
+
+.aboutme {
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: 10%;
+  margin-right: 0px; }
+
+p {
+  font-size: 20px;
+  margin-top: 20px; }
+
+h2 {
+  font-size: 25px; }
+
+.name {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 5%; }
+  .name h1 {
+    font-size: 50px; }
+
+.coordonnées {
+  grid-column: 2;
+  grid-row: 2;
+  line-height: 40px;
+  margin-left: 10%; }
+  .coordonnées img {
+    margin-right: 20px; }
+
+.reseaux {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  text-align: center;
+  margin-top: 10px; }
+  .reseaux li {
+    display: inline-block;
+    margin-left: 5%; }
