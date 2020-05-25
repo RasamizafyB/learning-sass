@@ -1,5 +1,5 @@
 # learning-sass
-[Ici]( https://rasamizafyb.github.io/learning-sass/) vous trouverez mon Curiculum Vitae réaliser avec SASS.
+[Ici]( https://rasamizafyb.github.io/learning-sass/) vous trouverez ma VCard réaliser avec SASS.
 
 La mise en page est la même mais a été réaliser en SASS. 
 
